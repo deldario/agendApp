@@ -1,13 +1,14 @@
-
 package it.thinkopen.AgendApp.model;
+
 import javax.persistence.*;
 import lombok.Data;
-
 
 @Entity
 @Data
 public class Sala {
-    @Id
+    
+	@Id
     private Long id;    
-    private String nome;    
+    
+	private String nome;    
 }
