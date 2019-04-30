@@ -12,7 +12,7 @@ public class Prenotazione {
 	
 	@ManyToOne
 	private Utente utente;
-	
+	//
 	@ManyToOne
 	private Sala sala;
 	
