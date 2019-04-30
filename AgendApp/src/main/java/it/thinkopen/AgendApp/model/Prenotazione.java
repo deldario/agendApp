@@ -1,5 +1,7 @@
 package it.thinkopen.AgendApp.model;
 
+import java.util.Date;
+
 import javax.persistence.*;
 import lombok.Data;
 
@@ -12,8 +14,11 @@ public class Prenotazione {
 	
 	@ManyToOne
 	private Utente utente;
-	//
+	
 	@ManyToOne
 	private Sala sala;
+	
+	private Date start;
+	private Date end;
 	
 }
