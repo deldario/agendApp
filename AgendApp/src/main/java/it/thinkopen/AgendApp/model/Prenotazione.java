@@ -8,6 +8,12 @@ import lombok.Data;
 public class Prenotazione {
 	
 	@Id
-	private long id;
+	private Long id;
+	
+	@ManyToOne
+	private Utente utente;
+	
+	@ManyToOne
+	private Sala sala;
 	
 }
