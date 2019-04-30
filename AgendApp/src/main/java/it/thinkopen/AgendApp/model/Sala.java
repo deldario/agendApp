@@ -8,6 +8,7 @@ import lombok.Data;
 public class Sala {
     
 	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;    
     
 	private String nome;    
